@@ -1,0 +1,316 @@
+---
+title: "R and JDemetra+ : RJDemetra and rjdqa"
+subtitle: "SACE Meeting #5, 4 October 2018"
+author: "Alain Quartier-la-Tente"
+division: "Insee, Seasonal Adjustment Centre of Excellence (SACE)"
+logo: "img/SACElogo.jpg"
+output:
+    beamer_presentation:
+        template: template.tex
+        keep_tex: yes
+        theme: TorinoTh
+        slide_level: 3
+    ioslides_presentation:
+       logo: SACElogo.JPG
+header-includes:
+- \usepackage{booktabs}
+- \usepackage{longtable}
+- \usepackage{array}
+- \usepackage{multirow}
+- \usepackage[table]{xcolor}
+- \usepackage{wrapfig}
+- \usepackage{float}
+- \usepackage{colortbl}
+- \usepackage{pdflscape}
+- \usepackage{tabu}
+- \usepackage{threeparttable}
+- \usepackage{threeparttablex}
+- \usepackage[normalem]{ulem}
+- \usepackage{makecell}
+themeoptions: "coding=utf8,language=english"
+classoption: 'usepdftitle=false,french'
+fontsize: 10pt
+---
+
+```{r setup, include=FALSE}
+options(crayon.enabled = FALSE)
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# RJDemetra
+
+## Purpose and current status
+
+### Purpose of the RJDemetra package
+
+* Complete R package for Tramo-Seats and X13  
+* Users: "pure R" package
+    + Part of R routines, automatization
+        - Batch processing
+        - E.g.: direct vs indirect aggregates adjustment, dashboards
+    + Usage of other R functions and packages
+    
+* JD+ functionality 
+    + Modeling and seasonal adjustment 
+    + Full specification
+    
+* Advanced graphical presentation: JD+ 
+
+
+
+### Current status
+
+- RegARIMA, TRAMO-SEATS and X-13-ARIMA:  
+    + R package with documentation  
+    + S3 classes with plot, summary, print methods
+    + Possibility to add user-defined regressors but not user-defined calendar regressors
+
+- Manipulate workspace (only TRAMO-SEATS and X-13-ARIMA):  
+    + Import JD+ workspace to get: input raw series or SA model
+    + Export R models created via RJDemetra
+
+
+## RegARIMA examples
+### RegARIMA examples (1/3)
+\footnotesize
+
+```{r}
+library(RJDemetra)
+regarima_model <- regarima_def_x13(myseries, spec = "RG4c")
+regarima_model # Or summary(regarima_model) to have more details
+```
+
+### RegARIMA examples (2/3)
+
+```{r, echo = FALSE}
+def.par <- par(no.readonly = TRUE)
+par(mai = c(0,0.82,0,0.42))
+```
+
+```{r, fig.height = 6 }
+layout(matrix(1:6, 3, 2));plot(regarima_model, ask = FALSE)
+```
+
+### RegARIMA examples (3/3)
+
+\footnotesize
+
+```{r, echo = FALSE}
+layout(1)
+par(mai = c(0,0.82,0,0.42))
+```
+
+To select a specific graph `which` parameter; `dec_zoom` for an additional regarima decomposition graph:
+
+```{r, fig.width = 4.5, fig.height = 4.5, eval = FALSE}
+plot(regarima_model, which = 6, dec_zoom = TRUE)
+```
+
+
+\includegraphics[width=0.4\paperwidth,height = 1.2\textheight]{img/regarima1.png}\includegraphics[width=0.5\paperwidth]{img/regarima2.png}
+
+
+## Seasonal adjustment examples
+### Seasonal adjustment examples (1/7)
+
+A `SA` object is a `list()` of 5 elements:
+
+1. `regarima`: the RegArima model
+2. `decomposition`: decomposition variables ($\ne$ for TRAMO-SEATS and X-13-ARIMA)
+3. `final`: time series main results
+4. `diagnostics`: residuals tests, etc.
+5. `user_defined`: other user_defined variables not exported by default (see `?user_defined_variables`)
+
+\footnotesize
+```{r}
+x13_usr_spec <- x13_spec_def(spec=c("RSA5c"),usrdef.outliersEnabled = TRUE,
+                             usrdef.outliersType = c("LS","AO"),
+                             usrdef.outliersDate=c("2008-10-01","2002-01-01"),
+                             usrdef.outliersCoef = c(36000,14000),
+                             transform.function = "None")
+x13_mod <- x13(myseries, x13_usr_spec)
+ts_mod <- tramoseats_def(myseries, spec = "RSAfull")
+```
+
+### Seasonal adjustment examples (2/7)
+
+\footnotesize
+
+```{r}
+x13_mod$decomposition
+```
+
+### Seasonal adjustment examples (3/7)
+
+\footnotesize
+
+```{r}
+print(ts_mod$diagnostics, enable_print_style = FALSE)
+```
+
+
+### Seasonal adjustment examples (4/7)
+
+```{r, fig.height=6}
+plot(x13_mod$decomposition)
+```
+
+### Seasonal adjustment examples (5/7)
+
+\footnotesize
+
+```{r}
+x13_mod$final
+```
+
+### Seasonal adjustment examples (6/7)
+
+```{r,fig.height=6}
+plot(x13_mod$final, first_date = 2012, type_chart = "sa-trend")
+```
+
+
+### Seasonal adjustment examples (7/7)
+
+\footnotesize
+```{r,fig.height=6}
+print(x13_mod$diagnostics, enable_print_style = FALSE)
+```
+
+
+## Manipulate workspaces
+
+
+### Export a workspace
+
+\footnotesize
+```{r, echo= TRUE, message = FALSE}
+wk <- new_workspace()
+new_multiprocessing(wk, "sa1")
+add_sa_item(wk, multiprocessing = "sa1",
+            x13_mod)
+add_sa_item(wk, multiprocessing = "sa1",
+            ts_mod, "TramoSeats")
+save_workspace(wk, "workspace.xml")
+```
+
+\includegraphics{img/workspace.png}
+
+### Import a workspace (1/3)
+
+\footnotesize
+
+```{r}
+wk <- load_workspace("workspace.xml")
+get_ts(wk)
+```
+
+### Import a workspace (2/3)
+
+\footnotesize
+
+```{r}
+compute(wk) # Important to get the Sa model
+models <- get_model(wk) # A progress bar is printed by default
+# To extract only one model
+mp <- get_object(wk, 1)
+count(mp)
+sa2 <- get_object(mp,2)
+get_name(sa2)
+mod <- get_model(wk, sa2)
+```
+
+### Import a workspace (3/3)
+
+\bcsmmh Still some bugs importing a workspace created by JDemetra+ when:
+
+- The workspace contains user-defined trading days regressors
+
+
+- The workspace contains an invalid model
+
+
+
+
+
+## How to install and contribute to the package?
+
+### How to install the package?
+
+The package is available on github: https://github.com/nbbrd/rjdemetra
+
+\bcinfo To install it you need Java8:  in case you don't, install a portable version of Java8 and set the `JAVA_HOME` path.
+
+To install it use `devtools` or download the zip file
+
+```{r gh-installation, eval = FALSE}
+# install.packages("devtools")
+devtools::install_github("nbbrd/rjdemetra",
+                         args = "--no-multiarch")
+```
+
+### How to contribute to the package?
+
+You can contribute:
+
+- Testing it and reporting issues (https://github.com/nbbrd/rjdemetra/issues)
+
+- Correcting issues (https://github.com/nbbrd/rjdemetra/pulls)
+
+- Developping new tools (other packages, new functions, etc.)
+
+## Future developments
+
+### What's next? \bcpanchant
+
+- Possibility to used user-defined calendar regressors
+
+- `update` function to refresh a model with new data
+
+- Include a "complete" dataset in the package
+
+- Write a vignette (long-form guide to the package)
+
+- More tests on the package
+
+#One addin example: rdjqa
+## What for?
+
+### What for?
+
+A package for quality assessment for seasonal adjustment. It implements:
+
+- Statistics Canada Dashboard (to provide a snapshot of an individual series at a point in time and points out some possible problems)
+
+- Insee quality report matrix (used to help the analyst during production to prioritize the models to check)
+
+$\rightarrow$ See the [Seasonal Adjustment handbook](https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/KS-GQ-18-001?inheritRedirect=true)
+
+Available on github https://github.com/AQLT/rjdqa, still in development (only works for X13 models and no documentation yet)
+
+Example of the dashboard:
+
+```{r,fig.height=6.5, eval = FALSE}
+library(rjdqa)
+plot(sa_dashboard(x13_mod))
+```
+
+## Statistics Canada dashboard
+
+### Example of the dashboard (1/2)
+\footnotesize
+```{r,fig.height=6.5, echo = FALSE}
+library(rjdqa)
+sa_db_data <- sa_dashboard(x13_mod)
+plot(sa_db_data)
+```
+
+### Example of the dashboard (2/2)
+
+1. **Recent History of Series**: plot of the raw series, the SA series and the trend for the most recent periods.  It is intended to identify trend direction, overall volatility and obvious outliers
+
+2.  **Summary of Key Diagnostics**: key diagnostics as residual seasonality, recent and recurring outliers, moving seasonality, ARIMA model autocorrelation
+
+3. **Estimated Patterns and Anticipated Movements**: estimated trading day, moving holiday and seasonal pattern (rescaled in additive decomposition to represent relative level)
+
+4.  **Net Effect of Seasonal Adjustment**: movement in the raw series, compared to typical ranges centered around "neutral" value (when $SA_t = SA_{t-1}$)

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<informationSet xmlns="ec/tss.core">
+    <item name="sa1">
+        <subset>
+            <item name="name">
+                <string>x13_mod</string>
+            </item>
+            <item name="ts">
+                <ts name="x13_mod">
+                    <freq>12</freq>
+                    <firstYear>2001</firstYear>
+                    <firstPeriod>12</firstPeriod>
+                    <data>239720.0 246680.0 240476.0 254298.0 261655.0 273847.0 285696.0 296574.0 301114.0 306676.0 313872.0 321353.0 341158.0 312120.0 319317.0 327218.0 336320.0 343756.0 351042.0 361475.0 362668.0 364830.0 371239.0 379148.0 397902.0 389117.0 393469.0 399591.0 409373.0 416623.0 423014.0 436246.0 433400.0 438041.0 444394.0 448753.0 468426.0 459893.0 463566.0 471751.0 481074.0 485829.0 496407.0 506284.0 500775.0 507014.0 510363.0 514338.0 532738.0 520777.0 524765.0 532187.0 540257.0 543523.0 553658.0 562621.0 558909.0 563110.0 566998.0 571419.0 592122.0 575640.0 578720.0 588522.0 594796.0 597610.0 604978.0 612926.0 610644.0 610479.0 613502.0 618655.0 638551.0 623127.0 628987.0 632868.0 641391.0 645746.0 652087.0 658817.0 655993.0 657080.0 698784.0 703624.0 722746.0 712199.0 715829.0 719841.0 729136.0 731911.0 734897.0 745341.0 741044.0 740515.0 745290.0 749965.0 769871.0 757084.0 759517.0 768585.0 772608.0 778963.0 785493.0 793930.0 787969.0 786756.0 789040.0 790206.0 808562.0 796249.0 796244.0 798344.0 805450.0 810435.0 819663.0 828194.0 823445.0 831170.0 837498.0 841367.0 857482.0 842958.0 842541.0 844906.0 847598.0 856303.0 867744.0 871509.0 870166.0 866652.0 864266.0 864074.0 876787.0 856975.0 855786.0 867536.0 874708.0 879698.0 885908.0 892804.0 894196.0 894026.0 897951.0 903364.0 921221.0 908272.0 910194.0 916522.0 921814.0 928897.0 935294.0 944707.0 946755.0 947025.0 950566.0 956813.0 980634.0 979087.0 983220.0 990949.0 999766.0 1006424.0 1017083.0 1031285.0 1029364.0 1026546.0 1028789.0 1034492.0 1048926.0 1037667.0 1038867.0 1042518.0 1047084.0 1049349.0 1057708.0 1067801.0 1064305.0 1066501.0 1069742.0 1070979.0 1087082.0 1075137.0 1078141.0 1082422.0 1089204.0 1089662.0 1099145.0 1104797.0 1102805.0 1103295.0 1106170.0 1107118.0</data>
+                </ts>
+            </item>
+            <item name="domainspec">
+                <string>spec1</string>
+            </item>
+        </subset>
+    </item>
+    <item name="sa2">
+        <subset>
+            <item name="name">
+                <string>TramoSeats</string>
+            </item>
+            <item name="ts">
+                <ts name="TramoSeats">
+                    <freq>12</freq>
+                    <firstYear>2001</firstYear>
+                    <firstPeriod>12</firstPeriod>
+                    <data>239720.0 246680.0 240476.0 254298.0 261655.0 273847.0 285696.0 296574.0 301114.0 306676.0 313872.0 321353.0 341158.0 312120.0 319317.0 327218.0 336320.0 343756.0 351042.0 361475.0 362668.0 364830.0 371239.0 379148.0 397902.0 389117.0 393469.0 399591.0 409373.0 416623.0 423014.0 436246.0 433400.0 438041.0 444394.0 448753.0 468426.0 459893.0 463566.0 471751.0 481074.0 485829.0 496407.0 506284.0 500775.0 507014.0 510363.0 514338.0 532738.0 520777.0 524765.0 532187.0 540257.0 543523.0 553658.0 562621.0 558909.0 563110.0 566998.0 571419.0 592122.0 575640.0 578720.0 588522.0 594796.0 597610.0 604978.0 612926.0 610644.0 610479.0 613502.0 618655.0 638551.0 623127.0 628987.0 632868.0 641391.0 645746.0 652087.0 658817.0 655993.0 657080.0 698784.0 703624.0 722746.0 712199.0 715829.0 719841.0 729136.0 731911.0 734897.0 745341.0 741044.0 740515.0 745290.0 749965.0 769871.0 757084.0 759517.0 768585.0 772608.0 778963.0 785493.0 793930.0 787969.0 786756.0 789040.0 790206.0 808562.0 796249.0 796244.0 798344.0 805450.0 810435.0 819663.0 828194.0 823445.0 831170.0 837498.0 841367.0 857482.0 842958.0 842541.0 844906.0 847598.0 856303.0 867744.0 871509.0 870166.0 866652.0 864266.0 864074.0 876787.0 856975.0 855786.0 867536.0 874708.0 879698.0 885908.0 892804.0 894196.0 894026.0 897951.0 903364.0 921221.0 908272.0 910194.0 916522.0 921814.0 928897.0 935294.0 944707.0 946755.0 947025.0 950566.0 956813.0 980634.0 979087.0 983220.0 990949.0 999766.0 1006424.0 1017083.0 1031285.0 1029364.0 1026546.0 1028789.0 1034492.0 1048926.0 1037667.0 1038867.0 1042518.0 1047084.0 1049349.0 1057708.0 1067801.0 1064305.0 1066501.0 1069742.0 1070979.0 1087082.0 1075137.0 1078141.0 1082422.0 1089204.0 1089662.0 1099145.0 1104797.0 1102805.0 1103295.0 1106170.0 1107118.0</data>
+                </ts>
+            </item>
+            <item name="domainspec">
+                <string>spec2</string>
+            </item>
+        </subset>
+    </item>
+    <item name="domainspecs">
+        <subset>
+            <item name="spec1">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="theta">
+        <params>
+            <coef/>
+        </params>
+    </item>
+    <item name="btheta">
+        <params>
+            <coef/>
+        </params>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>true</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="outlier">
+<subset>
+    <item name="ao">
+        <double>0.0</double>
+    </item>
+    <item name="tc">
+        <double>0.0</double>
+    </item>
+    <item name="ls">
+        <double>0.0</double>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="tradingdays">
+        <subset>
+            <item name="option">
+                <string>TradingDays</string>
+            </item>
+            <item name="leapyear">
+                <string>LeapYear</string>
+            </item>
+            <item name="autoadjust">
+                <boolean>false</boolean>
+            </item>
+            <item name="test">
+                <string>Remove</string>
+            </item>
+        </subset>
+    </item>
+    <item name="mh1">
+        <subset>
+            <item name="type">
+                <string>Easter</string>
+            </item>
+            <item name="param">
+                <integer>8</integer>
+            </item>
+            <item name="test">
+                <string>Add</string>
+            </item>
+        </subset>
+    </item>
+    <item name="outliers">
+        <strings>
+            <items>LS.2008-10-01 AO.2002-01-01</items>
+        </strings>
+    </item>
+    <item name="fixedcoefficients">
+        <subset>
+            <item name="LS (2008-10-01)">
+                <double>36000.0</double>
+            </item>
+            <item name="AO (2002-01-01)">
+                <double>14000.0</double>
+            </item>
+        </subset>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="seasonalma">
+<strings>
+    <items>Msr</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="spec2">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>tramoseats</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="tramo">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>tramo</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Auto</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="mu">
+        <param/>
+    </item>
+    <item name="theta">
+        <params>
+            <coef/>
+        </params>
+    </item>
+    <item name="btheta">
+        <params>
+            <coef/>
+        </params>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>true</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="outlier">
+<subset>
+    <item name="types">
+        <strings>
+            <items>AO TC LS</items>
+        </strings>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="calendar">
+        <subset>
+            <item name="td">
+                <subset>
+                    <item name="option">
+                        <string>TradingDays</string>
+                    </item>
+                    <item name="leapyear">
+                        <boolean>true</boolean>
+                    </item>
+                    <item name="testtype">
+                        <string>Separate_T</string>
+                    </item>
+                </subset>
+            </item>
+            <item name="easter">
+                <subset>
+                    <item name="type">
+                        <string>IncludeEaster</string>
+                    </item>
+                    <item name="test">
+                        <boolean>true</boolean>
+                    </item>
+                </subset>
+            </item>
+        </subset>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+        </subset>
+    </item>
+</informationSet>

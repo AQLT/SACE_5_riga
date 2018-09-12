@@ -1,0 +1,29 @@
+\frametitle{What for?}
+
+A package for quality assessment for seasonal adjustment. It implements:
+
+\begin{itemize}
+\item
+  Statistics Canada Dashboard (to provide a snapshot of an individual
+  series at a point in time and points out some possible problems)
+\item
+  Insee quality report matrix (used to help the analyst during
+  production to prioritize the models to check)
+\end{itemize}
+
+\(\rightarrow\) See the
+\href{https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/KS-GQ-18-001?inheritRedirect=true}{Seasonal
+Adjustment handbook}
+
+Available on github \url{https://github.com/AQLT/rjdqa}, still in
+development (only works for X13 models and no documentation yet)
+
+Example of the dashboard:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(rjdqa)}
+\KeywordTok{plot}\NormalTok{(}\KeywordTok{sa_dashboard}\NormalTok{(x13_mod))}
+\end{Highlighting}
+\end{Shaded}
+
