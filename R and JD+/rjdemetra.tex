@@ -396,49 +396,42 @@ A \texttt{SA} object is a \texttt{list()} of 5 elements:
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{print}\NormalTok{(ts_mod}\OperatorTok{$}\NormalTok{diagnostics, }\DataTypeTok{enable_print_style =} \OtherTok{FALSE}\NormalTok{)}
+\KeywordTok{print}\NormalTok{(ts_mod}\OperatorTok{$}\NormalTok{decomposition, }\DataTypeTok{enable_print_style =} \OtherTok{FALSE}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
 
 \begin{verbatim}
-##  Relative contribution of the components to the stationary portion of the variance in the original series, after the removal of the long term trend 
-##  Trend computed by Hodrick-Prescott filter (cycle length = 8.0 years)
-##            Component
-##  Cycle        12.127
-##  Seasonal      4.002
-##  Irregular     0.000
-##  TD & Hol.     0.000
-##  Others       95.857
-##  Total       111.986
+## Model
+## AR :  1 - 0.060534 B - 0.151535 B^2 - 0.346036 B^3 - 0.302623 B^12 + 0.018319 B^13 + 0.045858 B^14 + 0.104718 B^15 
+## D :  1 - B - B^12 + B^13 
+## MA :  1 - 0.950000 B^12 
 ## 
-##  Residual seasonality tests 
-##                                       P.value
-##  qs test on sa                          1.000
-##  qs test on i                           1.000
-##  f-test on sa (seasonal dummies)        1.000
-##  f-test on i (seasonal dummies)         0.998
-##  Residual seasonality (entire series)   1.000
-##  Residual seasonality (last 3 years)    0.998
-##  f-test on sa (td)                      0.995
-##  f-test on i (td)                       0.823
 ## 
-##  Combined test in the entire series 
-##  Non parametric tests for stable seasonality
-##                                                           P.value
-##    Kruskall-Wallis test                                      0.000
-##    Test for the presence of seasonality assuming stability   0.000
-##    Evolutive seasonality test                                0.151
-##  
-##  Identifiable seasonality present
+## SA
+## AR :  1 - 0.965728 B - 0.096740 B^2 - 0.208867 B^3 + 0.313230 B^4 
+## D :  1 - 2.000000 B + B^2 
+## MA :  1 - 1.027671 B - 0.516726 B^2 + 0.212676 B^3 + 0.444341 B^4 + 0.015991 B^5 - 0.127220 B^6 
+## Innovation variance:  0.1659023 
 ## 
-##  Combined test in the last 3 years 
-##  Non parametric tests for stable seasonality
-##                                                           P.value
-##    Kruskall-Wallis test                                      0.001
-##    Test for the presence of seasonality assuming stability   0.000
-##    Evolutive seasonality test                                0.662
-##  
-##  Identifiable seasonality present
+## Trend
+## AR :  1 - 1.701590 B + 0.720893 B^2 
+## D :  1 - 2.000000 B + B^2 
+## MA :  1 - 1.416543 B - 0.489305 B^2 + 1.416934 B^3 - 0.510304 B^4 
+## Innovation variance:  0.1113562 
+## 
+## Seasonal
+## AR :  1 + 0.905194 B + 0.819377 B^2 + 0.741695 B^3 + 0.671378 B^4 + 0.607728 B^5 + 0.550112 B^6 + 0.497958 B^7 + 0.450749 B^8 + 0.408015 B^9 + 0.369333 B^10 + 0.334318 B^11 
+## D :  1 + B + B^2 + B^3 + B^4 + B^5 + B^6 + B^7 + B^8 + B^9 + B^10 + B^11 
+## MA :  1 + 2.241222 B + 3.716358 B^2 + 5.660848 B^3 + 7.722368 B^4 + 9.780438 B^5 + 11.751543 B^6 + 13.407574 B^7 + 14.623967 B^8 + 15.339409 B^9 + 15.591270 B^10 + 15.578828 B^11 + 14.558211 B^12 + 13.312512 B^13 + 11.847326 B^14 + 9.938336 B^15 + 7.919640 B^16 + 5.904846 B^17 + 3.972349 B^18 + 2.337737 B^19 + 1.117890 B^20 + 0.369900 B^21 + 0.059204 B^22 
+## Innovation variance:  0.3804994 
+## 
+## Transitory
+## AR :  1 + 0.735862 B + 0.434502 B^2 
+## MA :  1 + 1.362205 B + 1.000000 B^2 
+## Innovation variance:  0.004635312 
+## 
+## Irregular
+## Innovation variance:  0.0007762478
 \end{verbatim}
 
 \end{frame}

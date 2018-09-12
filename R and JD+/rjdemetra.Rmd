@@ -145,7 +145,7 @@ x13_mod$decomposition
 \footnotesize
 
 ```{r}
-print(ts_mod$diagnostics, enable_print_style = FALSE)
+print(ts_mod$decomposition, enable_print_style = FALSE)
 ```
 
 
