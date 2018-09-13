@@ -269,7 +269,7 @@ You can contribute:
 
 - Include a "complete" dataset in the package
 
-- Write a vignette (long-form guide to the package)
+- Write a vignette (long-form guide to the package) or an article in the Journal of Statistical Software
 
 - More tests on the package
 

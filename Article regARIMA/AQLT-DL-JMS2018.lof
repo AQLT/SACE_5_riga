@@ -1,0 +1,14 @@
+\babel@toc {french}{}
+\contentsline {figure}{\numberline {1}{\ignorespaces Le fonctionnement global de \textsc {X-13Arima-Seats} et \textsc {Tramo-Seats} : correction et d\IeC {\'e}composition.}}{1}{figure.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces R\IeC {\'e}gresseurs associ\IeC {\'e}s \IeC {\`a} certaines formes de rupture (AO, LS, TC, SO).}}{5}{figure.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces Mod\IeC {\'e}lisation automatique de l'IPI de l'industrie manufacturi\IeC {\`e}re en France}}{7}{figure.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Estimations successives du coefficient LY pour la s\IeC {\'e}rie RF0610.}}{10}{figure.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Estimations successives du coefficient LY pour la s\IeC {\'e}rie RF139}}{10}{figure.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces Dur\IeC {\'e}e de convergence (en ann\IeC {\'e}e) du coefficient LY (\IeC {\'e}tude sur 624 s\IeC {\'e}ries)}}{11}{figure.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces Estimation finale de l'effet LY (\IeC {\'e}tude sur 624 s\IeC {\'e}ries)}}{12}{figure.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces \IeC {\'E}volution du pourcentage de cas o\IeC {\`u} le pr\IeC {\'e}-ajustement manuel de l'effet \IeC {\guillemotleft }~ann\IeC {\'e}e bissextile~\IeC {\guillemotright } est meilleur (au sens du $AICC$) que le pr\IeC {\'e}-ajustement Reg-ARIMA (\IeC {\'e}tude sur 2198 s\IeC {\'e}ries)}}{13}{figure.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces S\IeC {\'e}rie brute et \IeC {\'e}volution de l'estimation du point atypique AO1996.jan pour la s\IeC {\'e}rie DE-C1062 (mod\IeC {\`e}le additif)}}{15}{figure.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces S\IeC {\'e}rie brute et \IeC {\'e}volution de l'estimation du point atypique AO1996.jan pour la s\IeC {\'e}rie DE-C1086 (mod\IeC {\`e}le multiplicatif)}}{16}{figure.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Dur\IeC {\'e}e de convergence (en mois) du coefficient de la rupture selon le mod\IeC {\`e}le de d\IeC {\'e}composition}}{17}{figure.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces Estimation finale du coefficient de la rupture selon le mod\IeC {\`e}le de d\IeC {\'e}composition}}{18}{figure.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces Comparaison des mod\IeC {\`e}les obtenus pour la s\IeC {\'e}rie RF241 selon que le r\IeC {\'e}gresseur LY est mis en r\IeC {\'e}gresseur externe ou non}}{21}{figure.13}
