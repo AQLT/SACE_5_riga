@@ -213,10 +213,10 @@ Percentage of series for which the AICC of the pre-adjustment method is lower th
 	\item We keep the 12 first years of observations. The decomposition model, the ARIMA model, outliers and TD effect are identified and estimated on the 12 years. The decomposition model and the ARIMA model are kept fixed for the study;
 	\item<2-> The rupture will be introduced at observation 49 so:
 	\begin{itemize}
-	  \item<2-> The series is corrected for any outlier detected at observations 49 to 50 (one year).
-	  \item<2-> To facilitate the estimations and the comparisons, each series is rebased at 100 at observation 49;
+	  \item<2-> The series is corrected for any outlier detected at observations 49 to 60 (one year).
+	  \item<2-> To facilitate the estimations and the comparisons, each series is rebased at 100 at observation 49.
 	\end{itemize}
-	\item<3-> The rupture is introduced with a level 10 for an additive model and 1.1 for a multiplicative model;
+	\item<3-> The rupture is introduced with a level 10 for an additive model and 1.1 for a multiplicative model  and the corresponding outlier is added to the Reg-ARIMA model.
 	\item<3-> The estimation of the outlier coefficient is done adding each time a new observation. Thus, for a 12-year series, we obtain $12 \times 12 - 48 = 96$ estimations of the coefficient.
 	\item<4-> We assume that the convergence is reached when $\left\lvert\frac{\text{estimated value}}{\text{last estimated value}}-1\right\rvert < 5\;\%$
 \end{enumerate}
