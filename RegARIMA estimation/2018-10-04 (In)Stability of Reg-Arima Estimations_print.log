@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2018.10.1)  2 OCT 2018 13:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2018.10.1)  2 OCT 2018 15:55
 entering extended mode
-**"./2018-10-04 (In)Stability of Reg-Arima Estimations.tex"
-("2018-10-04 (In)Stability of Reg-Arima Estimations.tex"
+**"./2018-10-04 (In)Stability of Reg-Arima Estimations_print.tex"
+("2018-10-04 (In)Stability of Reg-Arima Estimations_print.tex"
 LaTeX2e <2018-04-01> patch level 5
 (D:\Software\Miktex\texmfs\install\tex\latex\beamer\beamer.cls
 Document Class: beamer 2018/09/20 v3.54 A class for typesetting presentations
@@ -1332,8 +1332,8 @@ LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 (D:\Software\Miktex\texmfs\install\tex\latex\beamer\beamercolorthemeorchid.sty)
 
 (D:\Software\Miktex\texmfs\install\tex\latex\beamer\beamerinnerthemerectangles.
-sty)) ("2018-10-04 (In)Stability of Reg-Arima Estimations.aux")
-\openout1 = `"2018-10-04 (In)Stability of Reg-Arima Estimations.aux"'.
+sty)) ("2018-10-04 (In)Stability of Reg-Arima Estimations_print.aux")
+\openout1 = `"2018-10-04 (In)Stability of Reg-Arima Estimations_print.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
@@ -1437,10 +1437,10 @@ LaTeX Info: Redefining \ref on input line 32.
 LaTeX Info: Redefining \pageref on input line 32.
 LaTeX Info: Redefining \nameref on input line 32.
 
-("2018-10-04 (In)Stability of Reg-Arima Estimations.out")
-("2018-10-04 (In)Stability of Reg-Arima Estimations.out")
+("2018-10-04 (In)Stability of Reg-Arima Estimations_print.out")
+("2018-10-04 (In)Stability of Reg-Arima Estimations_print.out")
 \@outlinefile=\write5
-\openout5 = `"2018-10-04 (In)Stability of Reg-Arima Estimations.out"'.
+\openout5 = `"2018-10-04 (In)Stability of Reg-Arima Estimations_print.out"'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 32.
@@ -1508,7 +1508,8 @@ Dictionary: translator-numbers-dictionary, Language: English
 (D:\Software\Miktex\texmfs\install\tex\latex\translator\translator-theorem-dict
 ionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
-) ("2018-10-04 (In)Stability of Reg-Arima Estimations.nav")
+)
+("2018-10-04 (In)Stability of Reg-Arima Estimations_print.nav")
 <img/SACELogo.png, id=85, 1016.29688pt x 91.09032pt>
 File: img/SACELogo.png Graphic file (type png)
 <use img/SACELogo.png>
@@ -1537,134 +1538,123 @@ LaTeX Font Info:    Font shape `T1/aess/m/it' in size <6> not available
  [1{D:/Software/Miktex/texmfs/data/pdftex/config/pdftex.map}
 
  <./img/SACELogo.png>]
-("2018-10-04 (In)Stability of Reg-Arima Estimations.toc") [2
+("2018-10-04 (In)Stability of Reg-Arima Estimations_print.toc") [2
 
 ] [3
 
 ]
-<img/X13-TSmethods.png, id=138, 514.92375pt x 388.45125pt>
+<img/X13-TSmethods.png, id=137, 514.92375pt x 388.45125pt>
 File: img/X13-TSmethods.png Graphic file (type png)
 <use img/X13-TSmethods.png>
 Package pdftex.def Info: img/X13-TSmethods.png  used on input line 64.
 (pdftex.def)             Requested size: 259.82622pt x 196.00473pt.
- [4
+
+[4
 
  <./img/X13-TSmethods.png>] [5
 
-] [6
+]
+("2018-10-04 (In)Stability of Reg-Arima Estimations_print.toc") [6
 
-] ("2018-10-04 (In)Stability of Reg-Arima Estimations.toc") [7
+] [7
 
-] [8
+]
+[8
 
 ] [9
 
 ] [10
 
-] [11
-
-] [12
-
-] [13
-
-] [14
-
 ]
-<img/LYexemple1.png, id=256, 633.567pt x 381.8265pt>
+<img/LYexemple1.png, id=217, 633.567pt x 381.8265pt>
 File: img/LYexemple1.png Graphic file (type png)
 <use img/LYexemple1.png>
 Package pdftex.def Info: img/LYexemple1.png  used on input line 160.
 (pdftex.def)             Requested size: 276.559pt x 166.66997pt.
- [15
+ [11
 
  <./img/LYexemple1.png>]
-<img/LYexemple2.png, id=269, 633.567pt x 381.8265pt>
+<img/LYexemple2.png, id=228, 633.567pt x 381.8265pt>
 File: img/LYexemple2.png Graphic file (type png)
 <use img/LYexemple2.png>
 Package pdftex.def Info: img/LYexemple2.png  used on input line 167.
 (pdftex.def)             Requested size: 276.559pt x 166.66997pt.
- [16
+ [12
 
  <./img/LYexemple2.png>]
-<img/LYconvergence.png, id=280, 470.50781pt x 470.50781pt>
+<img/LYconvergence.png, id=240, 470.50781pt x 470.50781pt>
 File: img/LYconvergence.png Graphic file (type png)
 <use img/LYconvergence.png>
 Package pdftex.def Info: img/LYconvergence.png  used on input line 177.
 (pdftex.def)             Requested size: 171.50058pt x 171.50273pt.
- [17
+ [13
 
  <./img/LYconvergence.png>]
-<img/LYvaleur.png, id=293, 479.54156pt x 470.50781pt>
+<img/LYvaleur.png, id=252, 479.54156pt x 470.50781pt>
 File: img/LYvaleur.png Graphic file (type png)
 <use img/LYvaleur.png>
 Package pdftex.def Info: img/LYvaleur.png  used on input line 186.
 (pdftex.def)             Requested size: 174.7934pt x 171.50273pt.
- [18
+ [14
 
  <./img/LYvaleur.png>]
-<img/LYaicc.png, id=305, 650.43pt x 361.35pt>
+<img/LYaicc.png, id=264, 650.43pt x 361.35pt>
 File: img/LYaicc.png Graphic file (type png)
 <use img/LYaicc.png>
 Package pdftex.def Info: img/LYaicc.png  used on input line 196.
 (pdftex.def)             Requested size: 307.28987pt x 170.72223pt.
+ [15
 
-[19
-
- <./img/LYaicc.png>] ("2018-10-04 (In)Stability of Reg-Arima Estimations.toc") 
-[20
+ <./img/LYaicc.png>]
+("2018-10-04 (In)Stability of Reg-Arima Estimations_print.toc") [16
 
 ]
-<img/Outliers.png, id=333, 734.745pt x 425.33907pt>
+<img/Outliers.png, id=291, 734.745pt x 425.33907pt>
 File: img/Outliers.png Graphic file (type png)
 <use img/Outliers.png>
 Package pdftex.def Info: img/Outliers.png  used on input line 206.
 (pdftex.def)             Requested size: 307.28987pt x 177.88832pt.
- [21
+ [17
 
- <./img/Outliers.png>] [22
-
-] [23
-
-] [24
-
-] [25
+ <./img/Outliers.png>] [18
 
 ]
-<img/AO_ipi_it1413_y.png, id=383, 633.567pt x 179.7114pt>
+<img/AO_ipi_it1413_y.png, id=310, 633.567pt x 179.7114pt>
 File: img/AO_ipi_it1413_y.png Graphic file (type png)
 <use img/AO_ipi_it1413_y.png>
 Package pdftex.def Info: img/AO_ipi_it1413_y.png  used on input line 237.
 (pdftex.def)             Requested size: 276.559pt x 78.44528pt.
-<img/AO_ipi_it1413_est.png, id=384, 633.567pt x 224.5188pt>
+<img/AO_ipi_it1413_est.png, id=311, 633.567pt x 224.5188pt>
 File: img/AO_ipi_it1413_est.png Graphic file (type png)
 <use img/AO_ipi_it1413_est.png>
 Package pdftex.def Info: img/AO_ipi_it1413_est.png  used on input line 237.
 (pdftex.def)             Requested size: 276.559pt x 98.00404pt.
- [26
+ [19
 
  <./img/AO_ipi_it1413_y.png> <./img/AO_ipi_it1413_est.png>]
-<img/outliers_convergence_additif_5.png, id=397, 633.567pt x 426.8748pt>
+<img/outliers_convergence_additif_5.png, id=324, 633.567pt x 426.8748pt>
 File: img/outliers_convergence_additif_5.png Graphic file (type png)
 <use img/outliers_convergence_additif_5.png>
 Package pdftex.def Info: img/outliers_convergence_additif_5.png  used on input 
 line 244.
 (pdftex.def)             Requested size: 276.559pt x 186.33388pt.
- [27
+ [20
 
- <./img/outliers_convergence_additif_5.png>] [28
-
-] ("2018-10-04 (In)Stability of Reg-Arima Estimations.toc") [29
+ <./img/outliers_convergence_additif_5.png>] [21
 
 ]
-[30
+("2018-10-04 (In)Stability of Reg-Arima Estimations_print.toc") [22
+
+] [23
 
 ]
-<img/CholeskyRF241.png, id=441, 770.88pt x 505.89pt>
+<img/CholeskyRF241.png, id=366, 770.88pt x 505.89pt>
 File: img/CholeskyRF241.png Graphic file (type png)
 <use img/CholeskyRF241.png>
 Package pdftex.def Info: img/CholeskyRF241.png  used on input line 290.
 (pdftex.def)             Requested size: 307.28987pt x 201.65767pt.
- [31
+
+[24
 
  <./img/CholeskyRF241.png>]
 File: bc-info.mps Graphic file (type mps)
@@ -1684,139 +1674,53 @@ File: bc-attention.mps Graphic file (type mps)
 File: bc-attention.mps Graphic file (type mps)
 
 [MP to PDF]
-(D:\Software\Miktex\texmfs\install\tex\latex\bclogo\bc-attention.mps) [32
-
-]
-File: bc-info.mps Graphic file (type mps)
-
-[MP to PDF] (D:\Software\Miktex\texmfs\install\tex\latex\bclogo\bc-info.mps)
-File: bc-smiley-bonnehumeur.mps Graphic file (type mps)
-
-[MP to PDF]
-(D:\Software\Miktex\texmfs\install\tex\latex\bclogo\bc-smiley-bonnehumeur.mps)
-File: bc-smiley-mauvaisehumeur.mps Graphic file (type mps)
-
-[MP to PDF]
-(D:\Software\Miktex\texmfs\install\tex\latex\bclogo\bc-smiley-mauvaisehumeur.mp
-s)
-File: bc-attention.mps Graphic file (type mps)
- [MP to PDF]
-(D:\Software\Miktex\texmfs\install\tex\latex\bclogo\bc-attention.mps)
-File: bc-attention.mps Graphic file (type mps)
-
-[MP to PDF]
-(D:\Software\Miktex\texmfs\install\tex\latex\bclogo\bc-attention.mps) [33
-
-]
-File: bc-info.mps Graphic file (type mps)
-
-[MP to PDF] (D:\Software\Miktex\texmfs\install\tex\latex\bclogo\bc-info.mps)
-File: bc-smiley-bonnehumeur.mps Graphic file (type mps)
-
-[MP to PDF]
-(D:\Software\Miktex\texmfs\install\tex\latex\bclogo\bc-smiley-bonnehumeur.mps)
-File: bc-smiley-mauvaisehumeur.mps Graphic file (type mps)
-
-[MP to PDF]
-(D:\Software\Miktex\texmfs\install\tex\latex\bclogo\bc-smiley-mauvaisehumeur.mp
-s)
-File: bc-attention.mps Graphic file (type mps)
- [MP to PDF]
-(D:\Software\Miktex\texmfs\install\tex\latex\bclogo\bc-attention.mps)
-File: bc-attention.mps Graphic file (type mps)
-
-[MP to PDF]
-(D:\Software\Miktex\texmfs\install\tex\latex\bclogo\bc-attention.mps) [34
-
-]
-File: bc-info.mps Graphic file (type mps)
-
-[MP to PDF] (D:\Software\Miktex\texmfs\install\tex\latex\bclogo\bc-info.mps)
-File: bc-smiley-bonnehumeur.mps Graphic file (type mps)
-
-[MP to PDF]
-(D:\Software\Miktex\texmfs\install\tex\latex\bclogo\bc-smiley-bonnehumeur.mps)
-File: bc-smiley-mauvaisehumeur.mps Graphic file (type mps)
-
-[MP to PDF]
-(D:\Software\Miktex\texmfs\install\tex\latex\bclogo\bc-smiley-mauvaisehumeur.mp
-s)
-File: bc-attention.mps Graphic file (type mps)
- [MP to PDF]
-(D:\Software\Miktex\texmfs\install\tex\latex\bclogo\bc-attention.mps)
-File: bc-attention.mps Graphic file (type mps)
-
-[MP to PDF]
-(D:\Software\Miktex\texmfs\install\tex\latex\bclogo\bc-attention.mps) [35
+(D:\Software\Miktex\texmfs\install\tex\latex\bclogo\bc-attention.mps) [25
 
 ]
 \tf@nav=\write6
-\openout6 = `"2018-10-04 (In)Stability of Reg-Arima Estimations.nav"'.
+\openout6 = `"2018-10-04 (In)Stability of Reg-Arima Estimations_print.nav"'.
 
 \tf@toc=\write7
-\openout7 = `"2018-10-04 (In)Stability of Reg-Arima Estimations.toc"'.
+\openout7 = `"2018-10-04 (In)Stability of Reg-Arima Estimations_print.toc"'.
 
 \tf@snm=\write8
-\openout8 = `"2018-10-04 (In)Stability of Reg-Arima Estimations.snm"'.
+\openout8 = `"2018-10-04 (In)Stability of Reg-Arima Estimations_print.snm"'.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 311.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 311.
 
-("2018-10-04 (In)Stability of Reg-Arima Estimations.aux")
+("2018-10-04 (In)Stability of Reg-Arima Estimations_print.aux")
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 311.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 311.
-
-
-Package rerunfilecheck Warning: File `"2018-10-04 (In)Stability of Reg-Arima Es
-timations".out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `"2018-10-04 (In)Stability of Reg-Ar
-ima Estimations".out':
-(rerunfilecheck)             Before: C80DE86E31CE5A4617BEF6D08210267E;761
-(rerunfilecheck)             After:  1F6199B888E31AD952EBCE71BB352224;761.
+Package rerunfilecheck Info: File `"2018-10-04 (In)Stability of Reg-Arima Estim
+ations_print".out' has not changed.
+(rerunfilecheck)             Checksum: B348570D4D5FCD0670E2C42FF67B46C8;760.
  ) 
 Here is how much of TeX's memory you used:
- 32980 strings out of 492970
- 649756 string characters out of 3133266
- 732437 words of memory out of 3000000
- 36074 multiletter control sequences out of 15000+200000
+ 32924 strings out of 492970
+ 647504 string characters out of 3133266
+ 718346 words of memory out of 3000000
+ 36072 multiletter control sequences out of 15000+200000
  569903 words of font info for 93 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 65i,14n,82p,820b,518s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{Outline0.3.3.26} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.3.2.25} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.3.1.21} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.2.4.16} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.2.3.14} has been referenced but does not e
-xist, replaced by a fixed one
-
-<D:/Software/Miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb><D
-:/Software/Miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/
-Software/Miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb><D:/Sof
-tware/Miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss10.pfb><D:/Softw
-are/Miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss12.pfb><D:/Softwar
-e/Miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss17.pfb><D:/Software/
-Miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss8.pfb><D:/Software/Mik
-tex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss9.pfb><D:/Software/Miktex
-/texmfs/install/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><D:/Software/Miktex
-/texmfs/install/fonts/type1/public/amsfonts/cm/cmssi10.pfb><D:/Software/Miktex/
-texmfs/install/fonts/type1/public/amsfonts/cm/cmssi8.pfb><D:/Software/Miktex/te
-xmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Software/Miktex/texm
-fs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on "2018-10-04 (In)Stability of Reg-Arima Estimations.pdf" (35 p
-ages, 809530 bytes).
+ 65i,14n,82p,826b,518s stack positions out of 5000i,500n,10000p,200000b,50000s
+<D:/Software/Miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+<D:/Software/Miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D
+:/Software/Miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb><D:/S
+oftware/Miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss10.pfb><D:/Sof
+tware/Miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss12.pfb><D:/Softw
+are/Miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss17.pfb><D:/Softwar
+e/Miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss8.pfb><D:/Software/M
+iktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss9.pfb><D:/Software/Mikt
+ex/texmfs/install/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><D:/Software/Mikt
+ex/texmfs/install/fonts/type1/public/amsfonts/cm/cmssi10.pfb><D:/Software/Mikte
+x/texmfs/install/fonts/type1/public/amsfonts/cm/cmssi8.pfb><D:/Software/Miktex/
+texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Software/Miktex/te
+xmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on "2018-10-04 (In)Stability of Reg-Arima Estimations_print.pdf"
+ (25 pages, 774971 bytes).
 PDF statistics:
- 544 PDF objects out of 1000 (max. 8388607)
- 88 named destinations out of 1000 (max. 500000)
+ 441 PDF objects out of 1000 (max. 8388607)
+ 63 named destinations out of 1000 (max. 500000)
  295 words of extra memory for PDF output out of 10000 (max. 10000000)
 

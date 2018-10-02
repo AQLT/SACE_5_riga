@@ -2,12 +2,12 @@
 \beamer@sectionintoc {1}{Introduction}{3}{0}{1}
 \beamer@sectionintoc {2}{Estimation of the Leap-Year Effect}{7}{0}{2}
 \beamer@subsectionintoc {2}{1}{How and when carry out the leap year adjustment?}{8}{0}{2}
-\beamer@subsectionintoc {2}{2}{Methodology of the study}{11}{0}{2}
-\beamer@subsectionintoc {2}{3}{Examples}{13}{0}{2}
-\beamer@subsectionintoc {2}{4}{Results}{15}{0}{2}
-\beamer@sectionintoc {3}{Outliers}{18}{0}{3}
-\beamer@subsectionintoc {3}{1}{Methodology of the study}{20}{0}{3}
-\beamer@subsectionintoc {3}{2}{Example}{21}{0}{3}
-\beamer@subsectionintoc {3}{3}{Results}{22}{0}{3}
-\beamer@sectionintoc {4}{Identification of the ARIMA model}{24}{0}{4}
-\beamer@sectionintoc {5}{Conclusion}{27}{0}{5}
+\beamer@subsectionintoc {2}{2}{Methodology of the study}{12}{0}{2}
+\beamer@subsectionintoc {2}{3}{Examples}{15}{0}{2}
+\beamer@subsectionintoc {2}{4}{Results}{17}{0}{2}
+\beamer@sectionintoc {3}{Outliers}{20}{0}{3}
+\beamer@subsectionintoc {3}{1}{Methodology of the study}{22}{0}{3}
+\beamer@subsectionintoc {3}{2}{Example}{26}{0}{3}
+\beamer@subsectionintoc {3}{3}{Results}{27}{0}{3}
+\beamer@sectionintoc {4}{Identification of the ARIMA model}{29}{0}{4}
+\beamer@sectionintoc {5}{Conclusion}{32}{0}{5}

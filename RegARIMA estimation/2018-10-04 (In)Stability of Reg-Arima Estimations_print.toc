@@ -1,0 +1,13 @@
+\babel@toc {english}{}
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{Estimation of the Leap-Year Effect}{6}{0}{2}
+\beamer@subsectionintoc {2}{1}{How and when carry out the leap year adjustment?}{7}{0}{2}
+\beamer@subsectionintoc {2}{2}{Methodology of the study}{9}{0}{2}
+\beamer@subsectionintoc {2}{3}{Examples}{11}{0}{2}
+\beamer@subsectionintoc {2}{4}{Results}{13}{0}{2}
+\beamer@sectionintoc {3}{Outliers}{16}{0}{3}
+\beamer@subsectionintoc {3}{1}{Methodology of the study}{18}{0}{3}
+\beamer@subsectionintoc {3}{2}{Example}{19}{0}{3}
+\beamer@subsectionintoc {3}{3}{Results}{20}{0}{3}
+\beamer@sectionintoc {4}{Identification of the ARIMA model}{22}{0}{4}
+\beamer@sectionintoc {5}{Conclusion}{25}{0}{5}
