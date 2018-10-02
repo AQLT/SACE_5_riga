@@ -1,6 +1,7 @@
 \frametitle{What for?}
 
-A package for quality assessment for seasonal adjustment. It implements:
+\includegraphics[height = 1.5cm]{img/rjdqa_logo.png} A package for
+quality assessment for seasonal adjustment. It implements:
 
 \begin{itemize}
 \item

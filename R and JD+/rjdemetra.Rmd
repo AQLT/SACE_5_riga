@@ -231,8 +231,6 @@ mod <- get_model(wk, sa2)
 
 
 
-
-
 ## How to install and contribute to the package?
 
 ### How to install the package?
@@ -278,7 +276,7 @@ You can contribute:
 
 ### What for?
 
-A package for quality assessment for seasonal adjustment. It implements:
+\includegraphics[height = 1.5cm]{img/rjdqa_logo.png} A package for quality assessment for seasonal adjustment. It implements:
 
 - Statistics Canada Dashboard (to provide a snapshot of an individual series at a point in time and points out some possible problems)
 
