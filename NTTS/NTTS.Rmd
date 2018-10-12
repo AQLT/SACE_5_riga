@@ -1,0 +1,109 @@
+---
+title: "RJDemetra: an R interface to JDemetra+"
+output: 
+  pdf_document:
+    fig_caption: yes
+    keep_tex: yes
+header-includes: \usepackage{float}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      fig.pos = 'H')
+```
+
+# Introduction
+
+RJDemetra is a R interface to [JDemetra+](https://github.com/jdemetra/jdemetra-app), the seasonal adjustment software [officially recommended](https://ec.europa.eu/eurostat/cros/system/files/Jdemetra_%20release.pdf) to the members of the ESS and the European System of Central Banks.
+
+JDemetra+ is a developed by the National Bank of Belgium (NBB) in cooperation with the Deutsche Bundesbank and Eurostat in accordance with the Guidelines of the European Statistical System (ESS). It implements the two leading seasonal adjustment methods [TRAMO/SEATS+](http://www.bde.es/bde/en/secciones/servicios/Profesionales/Programas_estadi/Programas_estad_d9fa7f3710fd821.html) and [X-12ARIMA/X-13ARIMA-SEATS](https://www.census.gov/srd/www/x13as/).
+
+R is a programming language and free software environment for statistical computing and free software widely use by statisticians.
+
+RJDemetra is a R package that offers full access to all options and outputs of JDemetra+. It also offers many possibilities to the users of JDemetra+ to implements new tools for the production of seasonally adjusted series thanks to all the libraries already available in R. It's available in github: <https://github.com/nbbrd/RJDemetra>.
+
+
+# Methods
+
+RJDemetra relies on the Java libraries use in JDemetra+: the algorithms are not implemented inside the package. The link between R and Java libraries is done with the [rJava](https://CRAN.R-project.org/package=rJava) package, which is a low-level R to Java interface. The consequence is that the results of the seasonal adjustment done in R are certified by the use of JDemetra+ and the system requirements needed to install the package are the same needed to use JDemetra+ (Java SE 8 or later).
+
+The goal of the RJDemetra package is to offer a "pure R" package to the users, more familiar to this language rather that Java. It allows them to integrate easily the seasonal adjustment process it their production and offers the possibility to implements new tools that are difficult to integrate into the graphical interface of JDemetra+, for example:
+
+- comparison of the direct and indirect aggregates adjustment;  
+- automatic generation of dashboards to summarise information for people responsible of the ongoing production but not of the maintenance of the seasonally adjusted models (and so non-JDemetra+ users);  
+- more easily implement quality report procedures.
+
+
+# Results
+
+
+In the current version of the RJDemetra package, users can:
+
+- seasonally adjust their time series with the TRAMO-SEATS and X-13-ARIMA methods;  
+- use the regARIMA preadjustment method implemented in TRAMO-SEATS and X-13-ARIMA methods;  
+- manipulate JDemetra+ workspace to easily switch from R models to the JDemetra+ graphical interface. The current functionalities are:
+    + importing JDemetra+ workspace in R to get input raw series or the seasonally adjust model as defined in RJDemetra;
+    + exporting R models created via RJDemetra to a readable JDemetra+ workspace.
+    
+All the seasonally adjust object created by RJDemetra are S3 classes with basic methods implements: `print()`, `plot()` and `summary()` (for regARIMA models).
+
+Let's see an example with the French industrial production index in manufacturing (<https://www.insee.fr/en/statistiques/serie/010537903>). The time series can be seasonally adjusted with the X-13-ARIMA method by the function `x13_def()`: main results are presented in figure \ref{fig:sa_ipi} created by the `plot()` function.
+
+    
+```{r, echo = FALSE}
+def.par <- par(no.readonly = TRUE)
+par(mai = c(0,0.82,0,0.42))
+ipi_french <- structure(c(103.41, 107.47, 121.71, 105.72, 113.05, 119.44, 108.09, 
+82, 116.37, 121.3, 117.16, 111.85, 110.68, 108.87, 123.95, 109.31, 
+109.79, 121.85, 112.35, 85.52, 114.13, 123.38, 114.17, 104.86, 
+108.42, 106.67, 118.51, 113.39, 105.56, 119.23, 113.89, 81.39, 
+115.56, 121.68, 110.95, 105.19, 106.89, 105.36, 117.09, 112.02, 
+101.49, 115.16, 111.23, 75.74, 117.52, 122.36, 107.81, 109.26, 
+104.68, 106.65, 122.82, 112.72, 104.46, 126.49, 111.06, 79.69, 
+121.88, 118.76, 112.21, 112.6, 107.64, 106.33, 118.77, 113.73, 
+109.73, 125.03, 106.4, 81.67, 123.03, 115.09, 115.52, 111.62, 
+108.84, 105.91, 124.76, 107.96, 113.07, 126.73, 108.74, 84.06, 
+121.04, 121.51, 116.55, 108.18, 111.49, 109.59, 123.98, 111.74, 
+111.65, 126.62, 116.59, 87.13, 117.32, 127.22, 117.95, 106.53, 
+113.18, 114.42, 117.47, 120.19, 107.63, 121.39, 115.12, 78.81, 
+118.89, 118.8, 99.45, 99.17, 90.66, 90.06, 99.99, 93.91, 88.27, 
+105.46, 97.94, 70.34, 106.46, 104.66, 99.04, 95.15, 90.34, 93.12, 
+109.46, 100.41, 95.5, 111.77, 100.84, 74.49, 109, 105, 102.71, 
+101.94, 98.96, 101.59, 115.34, 101.59, 110.1, 108.45, 100.96, 
+78.26, 110.02, 106.36, 106.28, 100.19, 99.32, 99.94, 110.31, 
+99.83, 96.1, 108.45, 103.76, 78.84, 102.94, 107.59, 101.9, 91.54, 
+95.97, 95.51, 103.48, 103.07, 95.95, 105.27, 104.97, 73.33, 103.04, 
+109.09, 98.94, 94.07, 96.45, 96.79, 104.43, 102.64, 92.36, 104.53, 
+103.06, 71.22, 107.14, 107.74, 95.62, 98.21, 94.2, 96.2, 108.69, 
+102.66, 91.02, 112.49, 101.08, 75.59, 109.11, 107.84, 101.52, 
+99.61, 95.02, 99.87, 108.25, 103.68, 98.73, 110.56, 95.61, 79.16, 
+107.82, 103.1, 104.52, 98.83, 98.95, 97.1, 114.88, 98.39, 102.66, 
+111.2, 99.57, 80.85, 108.54, 113.6, 110.7, 97.97, 102.92, 99.45, 
+112.96, 103.38, 99.27, 112.6, 106.76, 82.14), .Dim = c(224L, 
+1L), .Dimnames = list(NULL, "010537903"), .Tsp = c(2000, 2018.58333333333, 
+12), class = "ts")
+```
+
+```{r, fig.height = 3.5,fig.cap="\\label{fig:sa_ipi}The result of the seasonal adjustment process for the french IPI in manufacturing", fig.pos="H"}
+library(RJDemetra)
+x13_ipi <- x13_def(ipi_french, spec = "RSA3")
+plot(x13_ipi, type_chart = "sa-trend")
+```
+
+More complex figures are also implemented to have more details on the decomposition of the model, like S-I-ratio (figures \ref{fig:sa_si_ratio}).
+
+```{r, fig.height = 3,fig.cap="\\label{fig:sa_si_ratio}S-I ratio" }
+plot(x13_ipi$decomposition, ask = FALSE)
+```
+
+
+Other R libraries can also be used on the result of the seasonal adjustment model, not available in JDemetra+. So, for example, the Diebold-Mariano test (implemented in the [forecast](ttps://CRAN.R-project.org/package=forecast ) package) can be used to compare the forecast accuracy of two regARIMA models,as the Shapiro-Wilk test of normality on the residuals of a regARIMA model:
+
+```{r}
+shapiro.test(x13_ipi$regarima$residuals)
+```
+
+# Conclusions
+
+Implemen
+

@@ -1,0 +1,13 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: ntts2019abstract.aux
+The style file: unsrtnat.bst
+I couldn't open database file ntts2019abstract.bib.bib
+---line 38 of file ntts2019abstract.aux
+ : \bibdata{ntts2019abstract.bib
+ :                              }
+I'm skipping whatever remains of this command
+I found no database files---while reading file ntts2019abstract.aux
+Warning--I didn't find a database entry for "Lamport89"
+Warning--I didn't find a database entry for "CodePractice18"
+Warning--I didn't find a database entry for "Rumsey15"
+Warning--I didn't find a database entry for "Cohen38"
+(There were 2 error messages)
