@@ -9,7 +9,7 @@
 
 %% WHO ARE YOU: LIST THE AUTHORS HERE
 \def\theauthors{
-Alain Quartier-la-Tente
+%Alain Quartier-la-Tente
 }
 
 %% WHAT IS YOUR PAPER ABOUT: PUT YOUR TITLE HERE
@@ -167,23 +167,23 @@ Alain Quartier-la-Tente
 %% DEAL WITH THE BIBLIOGRAPHY
 
 % that's what we use here for the bibliography
-%\usepackage[numbers]{natbib}
+\usepackage[numbers]{natbib}
 % see https://gking.harvard.edu/files/natnotes2.pdf
 \newcommand*{\doi}[1]{DOI: \href{https://doi.org/\detokenize{#1}}{\detokenize{#1}}} 
 \newcommand*{\arxiv}[1]{arXiv: \href{https://arxiv.org/abs/\detokenize{#1}}{\detokenize{#1}}} 
 
 
 %% If you are compiling using biblatex
-\usepackage[
-    backend=biber,
-    style=authoryear,
-    natbib=true,
-    url=true, 
-    doi=true,
-    eprint=false, 
-    sorting=ynt
-]{biblatex}
-\addbibresource{\thisfile.bib}
+%\usepackage[
+%    backend=biber,
+%    style=authoryear,
+%    natbib=true,
+%    url=true, 
+%    doi=true,
+%    eprint=false, 
+%    sorting=ynt
+%]{biblatex}
+%\addbibresource{\thisfile.bib}
 
 
 \usepackage[utf8]{inputenc}
@@ -268,9 +268,9 @@ recommended} by Eurostat and the European Central Bank (ECB) to the members of t
 JDemetra+ is a developed by the National Bank of Belgium (NBB) in
 cooperation with the Deutsche Bundesbank with the support of Eurostat, in accordance with
 the ESS Guidelines on Seasonal Adjustment. It implements the two leading seasonal adjustment methods
-\href{http://www.bde.es/bde/en/secciones/servicios/Profesionales/Programas_estadi/Programas_estad_d9fa7f3710fd821.html}{TRAMO/SEATS+}  \cite{gomez1998automatic}
+\href{http://www.bde.es/bde/en/secciones/servicios/Profesionales/Programas_estadi/Programas_estad_d9fa7f3710fd821.html}{TRAMO/SEATS+} \cite{gomez1998automatic,caporello2004program}
 and
-\href{https://www.census.gov/srd/www/x13as/}{X-12ARIMA/X-13ARIMA-SEATS} \cite{ladiray1999x11}.
+\href{https://www.census.gov/srd/www/x13as/}{X-12ARIMA/X-13ARIMA-SEATS}~\cite{findleyx12,ladiray1999x11}.
 
 R is a programming language and free software environment for
 statistical computing and free software widely use by statisticians.
@@ -355,7 +355,7 @@ components of the series, like S-I-ratio (figures
 \begin{Highlighting}[]
 \KeywordTok{plot}\NormalTok{(x13_ipi}\OperatorTok{$}\NormalTok{decomposition, }\DataTypeTok{ask =} \OtherTok{FALSE}\NormalTok{)}
 \end{Highlighting}
-\end{Shaded}
+\end{Shaded}%$
 
 \begin{figure}[H]
 \centering
@@ -365,10 +365,10 @@ components of the series, like S-I-ratio (figures
 
 Other R libraries can also be used on the result of the seasonal
 adjustment model, not available in JDemetra+. So, for example, the
-Diebold-Mariano test (implemented in the
+Diebold-Mariano test \cite{dmtest} (implemented in the
 \href{ttps://CRAN.R-project.org/package=forecast}{forecast} package) can
 be used to compare the forecast accuracy of two regARIMA models, as the
-Shapiro-Wilk test of normality on the residuals of a regARIMA model:
+Shapiro-Wilk test of normality \cite{shapiro} on the residuals of a regARIMA model:
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -386,14 +386,18 @@ Shapiro-Wilk test of normality on the residuals of a regARIMA model:
 
 \section{Conclusions}\label{conclusions}
 
-More user-friendly than Java libraries for non-programmers, the RJDemetra package offers many new possibilities to the users, whether to facilitate production or to carry out studies. The paper would present main functions and the structure of the package. \cite{Lamport89}
+More user-friendly than Java libraries for non-programmers, the RJDemetra package offers many new possibilities to the users, whether to facilitate production or to carry out studies. The paper would present the main functions and the structure of the package. 
 
-
-%\bibliographystyle{unsrtnat}
+\bibliographystyle{unsrtnat}
 \renewcommand{\refname}{References}
 \addcontentsline{toc}{section}{References}
 
-\printbibliography % when using biblatex
+%%\printbibliography % when using biblatex
+
+\bibliography{\thisfile.bib}
+
+
+%\printbibliography % when using biblatex
 
 
 \end{document}
