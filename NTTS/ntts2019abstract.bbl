@@ -1,0 +1,60 @@
+\begin{thebibliography}{7}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Gómez and Maravall(1998)]{gomez1998automatic}
+Víctor Gómez and Agustin Maravall.
+\newblock Automatic modeling methods for univariate series.
+\newblock Working papers, Banco de España, 1998.
+\newblock URL \url{https://EconPapers.repec.org/RePEc:bde:wpaper:9808}.
+
+\bibitem[Caporello and Maravall(2004)]{caporello2004program}
+Gianluca Caporello and Agustin Maravall.
+\newblock Program {TSW}: {R}evised reference manual.
+\newblock {T}echnical {R}eport, {R}esearch {D}epartment, Banco de España,
+  2004.
+
+\bibitem[Findley et~al.(1998)Findley, Monsell, Bell, Otto, and
+  Chen]{findleyx12}
+David~F. Findley, Brian~C. Monsell, William~R. Bell, Mark~C. Otto, and
+  Bor-Chung Chen.
+\newblock New capabilities and methods of the {X}-12-{ARIMA}
+  seasonal-adjustment program.
+\newblock \emph{Journal of Business \& Economic Statistics}, 16\penalty0
+  (2):\penalty0 127--152, 1998.
+\newblock ISSN 07350015.
+\newblock URL \url{http://www.jstor.org/stable/1392565}.
+
+\bibitem[Ladiray and Quenneville(2001)]{ladiray1999x11}
+Dominique Ladiray and Benoit Quenneville.
+\newblock \emph{Seasonal adjustment with the X-11 Method}.
+\newblock Springer-Verlag Inc, Berlin; New York, 2001.
+
+\bibitem[Wickham(2014)]{wickham2014advanced}
+H.~Wickham.
+\newblock \emph{Advanced R}.
+\newblock Chapman \& Hall/CRC The R Series. Taylor \& Francis, 2014.
+\newblock ISBN 9781466586963.
+\newblock URL \url{http://adv-r.had.co.nz}.
+
+\bibitem[Diebold and Mariano(1995)]{dmtest}
+Francis~X. Diebold and Roberto~S. Mariano.
+\newblock Comparing predictive accuracy.
+\newblock \emph{Journal of Business \& Economic Statistics}, 13\penalty0
+  (3):\penalty0 253--263, 1995.
+\newblock URL
+  \url{https://amstat.tandfonline.com/doi/abs/10.1080/07350015.1995.10524599}.
+
+\bibitem[Royston(1982)]{shapiro}
+J.~P. Royston.
+\newblock An extension of shapiro and wilk's w test for normality to large
+  samples.
+\newblock \emph{Journal of the Royal Statistical Society. Series C (Applied
+  Statistics)}, 31\penalty0 (2):\penalty0 115--124, 1982.
+\newblock ISSN 00359254, 14679876.
+\newblock URL \url{http://www.jstor.org/stable/2347973}.
+
+\end{thebibliography}
